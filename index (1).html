@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Digital Ashwin Exports</title>
+<meta name="description" content="Digital Ashwin Exports supplies Indian sesame seeds, moong, peanuts, chana, matar and mogar to buyers across India and worldwide.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: light, clean export-trading site with deep green bands and saffron accents; hero, fact band, about, product grid, documents, packaging, enquiry, footer. */
+:root{
+  --bg:#F6F7F2; --bg2:#ECEFE6; --card:#FFFFFF; --line:#D9DED0; --ink:#12261D; --muted:#566559;
+  --green:#0F3D2E; --green2:#0B2A1F; --on-dark:#F3F6EE; --on-dark-muted:#B7C6BA;
+  --gold:#E39B12; --gold-ink:#1A1100; --gold-text:#8F5A00;
+  --serif:"Playfair Display",Georgia,"Times New Roman",serif;
+  --sans:"Inter","Helvetica Neue",Arial,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.65 var(--sans);margin:0;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0}
+.w{max-width:1100px;margin:0 auto}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+h1,h2,h3{font-family:var(--serif);margin:0;line-height:1.12;text-wrap:balance}
+h1{font-size:clamp(2.3rem,6.5vw,4rem);font-weight:700;letter-spacing:-.01em}
+h2{font-size:clamp(1.7rem,4vw,2.4rem);font-weight:700}
+h3{font-size:1.15rem;font-weight:600}
+p{margin:0}
+.eyebrow{font:600 .72rem/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--gold-text)}
+.muted{color:var(--muted)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;font:600 .9rem/1 var(--sans);text-decoration:none;border:1px solid var(--gold);background:var(--gold);color:var(--gold-ink);cursor:pointer;border-radius:4px}
+.btn:hover{filter:brightness(1.08)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn.ghost:hover{border-color:var(--gold)}
+.btn.sm{padding:10px 16px;font-size:.8rem}
+/* header */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(246,247,242,.95);border-bottom:1px solid var(--line);
+  margin-left:calc(-1*max(16px,env(safe-area-inset-left,0px)));margin-right:calc(-1*max(16px,env(safe-area-inset-right,0px)));
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
+.bar .w{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.logo{font:700 1.05rem/1 var(--serif);text-decoration:none;display:flex;align-items:center;gap:10px;white-space:nowrap}
+.logo i{width:26px;height:26px;border-radius:50%;background:var(--green);display:grid;place-items:center;font:700 .8rem/1 var(--serif);color:var(--gold);font-style:normal}
+.menu{display:flex;gap:22px;align-items:center}
+.menu a{font-size:.82rem;text-decoration:none;color:var(--muted)}
+.menu a:hover{color:var(--ink)}
+@media(max-width:820px){.menu .lnk{display:none}}
+/* hero */
+.heroband{position:relative;margin-left:calc(-1*max(16px,env(safe-area-inset-left,0px)));margin-right:calc(-1*max(16px,env(safe-area-inset-right,0px)));
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));overflow:hidden;background:linear-gradient(180deg,#0F3D2E 0%,#0B2A1F 100%);color:var(--on-dark)}
+#heroSeeds{position:absolute;inset:0;width:100%;height:100%;opacity:.55}
+.heroband::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,36,27,.92) 0%,rgba(8,36,27,.6) 60%,rgba(8,36,27,.85) 100%)}
+.heroband h1{color:var(--on-dark)}
+.heroband .btn.ghost{color:var(--on-dark);border-color:rgba(255,255,255,.35)}
+.heroband .btn.ghost:hover{border-color:var(--gold)}
+.hero{position:relative;z-index:1;padding-block:84px 76px;display:grid;gap:22px;max-width:640px}
+.hero h1 em{display:block;font-style:normal;color:var(--gold)}
+.hero p.lead{color:var(--on-dark-muted);max-width:52ch}
+.tag{display:inline-flex;width:fit-content;gap:8px;align-items:center;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);padding:7px 12px;font:600 .68rem/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--gold);border-radius:3px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.chips{display:flex;gap:10px;flex-wrap:wrap}
+.chip{border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);padding:7px 12px;font-size:.74rem;color:var(--on-dark);border-radius:3px}
+/* fact band */
+.facts{background:var(--card);color:var(--ink);border-top:4px solid var(--gold);border-bottom:1px solid var(--line);
+  margin-left:calc(-1*max(16px,env(safe-area-inset-left,0px)));margin-right:calc(-1*max(16px,env(safe-area-inset-right,0px)));
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.facts .w{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px;padding-block:30px;text-align:center}
+.facts b{display:block;font:700 1.9rem/1.1 var(--serif);color:var(--green)}
+.facts span{font-size:.78rem;font-weight:500;color:var(--muted)}
+/* sections */
+section{padding-block:76px}
+.alt{background:var(--bg2);
+  margin-left:calc(-1*max(16px,env(safe-area-inset-left,0px)));margin-right:calc(-1*max(16px,env(safe-area-inset-right,0px)));
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.center{text-align:center;display:grid;gap:12px;justify-items:center;margin-bottom:44px}
+.center p{max-width:56ch;color:var(--muted)}
+.split{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:48px;align-items:center}
+.split>*{min-width:0}
+.copy{display:grid;gap:16px}
+.copy p{color:var(--muted)}
+.visual{position:relative;aspect-ratio:4/3;max-width:100%;border:1px solid var(--line);overflow:hidden;background:var(--green2);border-radius:6px}
+.visual canvas{width:100%;height:100%;display:block}
+.badges{position:absolute;left:14px;bottom:14px;display:flex;gap:10px}
+.badge{background:var(--gold);color:var(--gold-ink);padding:10px 14px;font:700 1.25rem/1 var(--serif);text-align:center}
+.badge small{display:block;font:500 .65rem/1.3 var(--sans);margin-top:4px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:6px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.card .img{aspect-ratio:16/8;position:relative;background:var(--green2)}
+.card .img canvas{width:100%;height:100%;display:block}
+.card .img .pill{position:absolute;left:12px;top:12px;background:var(--gold);color:var(--gold-ink);font:700 .65rem/1 var(--sans);padding:6px 9px;border-radius:3px;letter-spacing:.04em}
+.card .body{padding:20px;display:grid;gap:12px;flex:1;align-content:start}
+.card p{color:var(--muted);font-size:.9rem}
+.ticks{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:.84rem;color:var(--muted)}
+.ticks li{display:flex;gap:8px;align-items:baseline}
+.ticks li::before{content:"";flex:none;width:6px;height:6px;background:var(--gold);border-radius:50%;transform:translateY(-1px)}
+.card .btn{margin-top:auto;width:fit-content}
+.docs{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.doc{background:var(--card);border:1px solid var(--line);padding:16px 18px;border-radius:6px;display:grid;gap:3px}
+.doc b{font-size:.92rem}
+.doc span{font-size:.78rem;color:var(--muted)}
+.note{font-size:.82rem;color:var(--muted);margin-top:18px;text-align:center}
+.pack{display:grid;gap:16px}
+.pk{background:var(--card);border:1px solid var(--line);padding:20px;border-radius:6px;display:grid;gap:10px}
+.pk h3 span{color:var(--gold-text)}
+.pk em{font-style:normal;font-size:.78rem;color:var(--gold-text)}
+/* contact */
+.cbox{display:grid;gap:12px;margin-top:6px}
+.cl{display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);padding:14px 16px;border-radius:6px;text-decoration:none}
+.cl small{display:block;font-size:.72rem;color:var(--muted)}
+.cl b{font-size:.98rem;font-weight:600;user-select:all}
+.cl:hover{border-color:var(--gold)}
+.ic{flex:none;width:34px;height:34px;border-radius:6px;background:var(--green);display:grid;place-items:center;color:var(--gold);font:700 .8rem/1 var(--sans)}
+form{background:var(--card);border:1px solid var(--line);padding:24px;border-radius:6px;display:grid;gap:14px}
+form h3{font-size:1.2rem}
+.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px}
+label{display:grid;gap:6px;font-size:.78rem;color:var(--muted);min-width:0}
+input,select,textarea{font:400 .92rem/1.4 var(--sans);color:var(--ink);background:var(--bg);border:1px solid var(--line);padding:11px 12px;width:100%;border-radius:4px}
+textarea{min-height:90px;resize:vertical}
+#out{display:none;border-left:3px solid var(--gold);background:var(--bg);padding:14px 16px;border-radius:0 4px 4px 0}
+#out pre{white-space:pre-wrap;word-break:break-word;margin:0 0 12px;font:400 .82rem/1.55 ui-monospace,Menlo,monospace;color:var(--muted)}
+#out .actions{gap:10px}
+/* footer */
+footer{background:var(--green2);color:var(--on-dark);border-top:4px solid var(--gold);
+  margin-left:calc(-1*max(16px,env(safe-area-inset-left,0px)));margin-right:calc(-1*max(16px,env(safe-area-inset-right,0px)));
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:34px;padding-block:46px 30px}
+.fgrid h4{margin:0 0 12px;font:600 .72rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.fgrid ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:.86rem;color:var(--on-dark-muted)}
+.fgrid a{text-decoration:none}.fgrid a:hover{color:var(--on-dark)}
+.fgrid p{font-size:.86rem;color:var(--on-dark-muted);margin-top:12px;max-width:34ch}
+.copy2{border-top:1px solid rgba(255,255,255,.15);padding-block:18px;font-size:.78rem;color:var(--on-dark-muted);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+
+<div class="bar"><div class="w">
+  <a class="logo" href="#home"><i>D</i>Digital Ashwin Exports</a>
+  <nav class="menu" aria-label="Sections">
+    <a class="lnk" href="#home">Home</a><a class="lnk" href="#about">About Us</a><a class="lnk" href="#products">Products</a>
+    <a class="lnk" href="#documents">Documents</a><a class="lnk" href="#packaging">Packaging</a><a class="lnk" href="#contact">Contact Us</a>
+    <a class="btn sm" href="#contact" style="color:var(--gold-ink)">Get a Quote</a>
+  </nav>
+</div></div>
+
+<div class="heroband" id="home">
+  <canvas id="heroSeeds" aria-hidden="true"></canvas>
+  <div class="w"><div class="hero">
+    <span class="tag">Maharashtra, India &nbsp;·&nbsp; Domestic and export</span>
+    <h1>Premium Indian Seeds, Pulses and Nuts <em>Supplied Across India and the World</em></h1>
+    <p class="lead">Sourced from trusted Indian processors and supplied to buyers across India and around the globe. Ask for a sample first. Bulk loads for the domestic market, full containers for export, and every export document prepared on our side.</p>
+    <div class="actions">
+      <a class="btn" href="#products">View Products &rarr;</a>
+      <a class="btn ghost" href="#contact">Get a Quote</a>
+    </div>
+    <div class="chips"><span class="chip">Lab tested, pesticide free</span><span class="chip">Sample before order</span><span class="chip">FOB and CIF quotes</span><span class="chip">Full document set</span><span class="chip">Container loads</span></div>
+  </div></div>
+</div>
+
+<div class="facts"><div class="w">
+  <div><b>6</b><span>Products to start</span></div>
+  <div><b>24 t</b><span>Per 20 ft container</span></div>
+  <div><b>FOB / CIF</b><span>Price terms</span></div>
+  <div><b>Global</b><span>Domestic and export supply</span></div>
+</div></div>
+
+<div class="w">
+<section id="about"><div class="split">
+  <div class="visual"><canvas id="aboutSeeds" aria-hidden="true"></canvas>
+    <div class="badges"><div class="badge">Maharashtra<small>Based in India</small></div><div class="badge">Global<small>Domestic and export</small></div></div>
+  </div>
+  <div class="copy">
+    <span class="eyebrow">About us</span>
+    <h2>A new export house built around clear paperwork</h2>
+    <p>Digital Ashwin Exports, based in Maharashtra, sells Indian seeds, pulses and nuts to wholesalers, processors and importers, within India and in markets around the world.</p>
+    <p>We work from a sample and a written specification. Price terms, packing, inspection and payment go into one sales contract, so both sides know what is being shipped before it leaves our warehouse or port.</p>
+    <a class="btn ghost sm" href="#contact" style="width:fit-content">Talk to us &rarr;</a>
+  </div>
+</div></section>
+</div>
+
+<div class="alt"><div class="w"><section id="products">
+  <div class="center">
+    <span class="eyebrow">Our products</span>
+    <h2>What we export</h2>
+    <p>Grades and specifications are agreed per order and checked by an inspection agency of your choice.</p>
+  </div>
+  <div class="grid" id="pgrid"></div>
+  <p class="note">Availability and grades change with each crop. Ask for the current spec sheet and price with your sample request.</p>
+</section></div></div>
+
+<div class="w">
+<section id="documents">
+  <div class="center">
+    <span class="eyebrow">Paperwork</span>
+    <h2>Documents with every shipment</h2>
+    <p>Your clearing agent receives a complete set, so the container is not held at the port.</p>
+  </div>
+  <div class="docs">
+    <div class="doc"><b>Commercial invoice</b><span>With packing list</span></div>
+    <div class="doc"><b>Phytosanitary certificate</b><span>Issued by the Indian plant quarantine service</span></div>
+    <div class="doc"><b>Fumigation certificate</b><span>By an accredited fumigation agency</span></div>
+    <div class="doc"><b>Certificate of origin</b><span>In the format your country requires</span></div>
+    <div class="doc"><b>Quality certificate</b><span>From a lab or inspector, when requested</span></div>
+    <div class="doc"><b>Bill of lading</b><span>From the shipping line</span></div>
+    <div class="doc"><b>Marine insurance</b><span>On CIF orders</span></div>
+    <div class="doc"><b>Shipping bill</b><span>Filed through Indian customs</span></div>
+  </div>
+</section>
+</div>
+
+<div class="alt"><div class="w"><section id="packaging"><div class="split">
+  <div class="copy">
+    <span class="eyebrow">Packaging</span>
+    <h2>Packing for trucks and sea freight</h2>
+    <p>Goods are bagged to protect them in transport, including weeks at sea for export. Labelling and branding can be added on request.</p>
+    <div class="pack">
+      <div class="pk"><h3><span>25 kg</span> PP woven bag</h3>
+        <ul class="ticks"><li>Moisture-resistant liner on request</li><li>Custom labelling available</li><li>Palletised loading on request</li></ul>
+        <em>Good for: smaller buyers and distributors</em></div>
+      <div class="pk"><h3><span>50 kg</span> PP woven bag</h3>
+        <ul class="ticks"><li>Reinforced stitching</li><li>Custom labelling available</li><li>Suited to truck and full container loads</li></ul>
+        <em>Good for: bulk buyers and processors</em></div>
+    </div>
+  </div>
+  <div class="visual"><canvas id="packSeeds" aria-hidden="true"></canvas></div>
+</div></section></div></div>
+
+<div class="w">
+<section id="contact"><div class="split" style="align-items:start">
+  <div class="copy">
+    <span class="eyebrow">Contact us</span>
+    <h2>Ready to source from India?</h2>
+    <p>Send your requirements for domestic delivery or export, and we will reply with pricing, availability and sample details.</p>
+    <div class="cbox">
+      <a class="cl" href="https://wa.me/917057865491?text=Hello%20Digital%20Ashwin%20Exports%2C%20I%20would%20like%20a%20sample%20and%20quote." target="_blank" rel="noopener">
+        <span class="ic">WA</span><span><small>WhatsApp</small><b>+91 70578 65491</b></span></a>
+      <div class="cl"><span class="ic">@</span><span><small>Email</small><b>info@digitalashwin.in</b></span></div>
+      <div class="cl"><span class="ic">IN</span><span><small>Based in</small><b>Maharashtra, India</b></span></div>
+    </div>
+  </div>
+  <form id="f">
+    <h3>Send an enquiry</h3>
+    <div class="row">
+      <label for="person">Full name<input id="person" autocomplete="name" placeholder="Your name"></label>
+      <label for="company">Company<input id="company" autocomplete="organization" placeholder="Your company"></label>
+    </div>
+    <div class="row">
+      <label for="prod">Product<select id="prod"></select></label>
+      <label for="dest">Destination country<input id="dest" placeholder="Country or city"></label>
+    </div>
+    <div class="row">
+      <label for="qty">Quantity<select id="qty"><option>1 container (about 24 t)</option><option>2 to 4 containers</option><option>5 or more containers</option><option>Trial order below 1 container</option></select></label>
+      <label for="terms">Price terms<select id="terms"><option>FOB Indian port</option><option>CIF your port</option><option>Not sure yet</option></select></label>
+    </div>
+    <label for="msg">Message<textarea id="msg" placeholder="Grade, packing, destination port, inspection needs"></textarea></label>
+    <button class="btn" type="submit" style="justify-content:center">Prepare enquiry</button>
+    <div id="out" aria-live="polite">
+      <pre id="txt"></pre>
+      <div class="actions">
+        <a class="btn sm" id="wa" href="#" target="_blank" rel="noopener">Send on WhatsApp</a>
+        <button class="btn ghost sm" id="copy" type="button">Copy message</button>
+      </div>
+    </div>
+  </form>
+</div></section>
+</div>
+
+<footer><div class="w">
+  <div class="fgrid">
+    <div><a class="logo" href="#home"><i>D</i>Digital Ashwin Exports</a>
+      <p>Indian seeds, pulses and nuts for domestic and export buyers, from Maharashtra.</p></div>
+    <div><h4>Navigation</h4><ul><li><a href="#home">Home</a></li><li><a href="#about">About us</a></li><li><a href="#products">Products</a></li><li><a href="#documents">Documents</a></li><li><a href="#packaging">Packaging</a></li><li><a href="#contact">Contact us</a></li></ul></div>
+    <div><h4>Export regions</h4><ul><li>Domestic, across India</li><li>International, around the globe</li><li>Destination and terms agreed per order</li></ul></div>
+    <div><h4>Contact</h4><ul><li><a href="https://wa.me/917057865491?text=Hello%20Digital%20Ashwin%20Exports%2C%20I%20would%20like%20a%20sample%20and%20quote." target="_blank" rel="noopener">WhatsApp: +91 70578 65491</a></li><li>info@digitalashwin.in</li><li>Maharashtra, India</li></ul></div>
+  </div>
+  <div class="copy2"><span>&copy; 2026 Digital Ashwin Exports. All rights reserved.</span><span>Prices, grades and shipping dates are confirmed in the sales contract.</span></div>
+</div></footer>
+
+<script>
+(function(){
+  /* seeded pseudo-random so the artwork is stable */
+  function rng(s){return function(){s|=0;s=s+0x6D2B79F5|0;var t=Math.imul(s^s>>>15,1|s);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+  function mix(h,t){var n=parseInt(h.slice(1),16),r=n>>16,g=(n>>8)&255,b=n&255,k=t<0?0:255,a=Math.abs(t);
+    return 'rgb('+Math.round(r+(k-r)*a)+','+Math.round(g+(k-g)*a)+','+Math.round(b+(k-b)*a)+')'}
+  function one(c,k,pal,s,r){
+    c.save();
+    c.shadowColor='rgba(0,0,0,.45)';c.shadowBlur=s*.5;c.shadowOffsetX=s*.12;c.shadowOffsetY=s*.2;
+    var base=pal[Math.floor(r()*pal.length)];
+    var g=c.createRadialGradient(-s*.3,-s*.3,s*.1,0,0,s*1.2);
+    g.addColorStop(0,mix(base,.35));g.addColorStop(.55,base);g.addColorStop(1,mix(base,-.4));
+    c.fillStyle=g;c.beginPath();
+    if(k==='sesame'){c.moveTo(-s*1.05,0);c.quadraticCurveTo(-s*.2,-s*.62,s*.9,-s*.1);c.quadraticCurveTo(s*1.1,0,s*.9,s*.1);c.quadraticCurveTo(-s*.2,s*.62,-s*1.05,0);}
+    else if(k==='peanut'){c.ellipse(0,0,s*1.05,s*.72,0,0,6.2832);}
+    else if(k==='chana'){c.moveTo(-s*.9,0);c.bezierCurveTo(-s*.9,-s*.9,s*.5,-s*.95,s*.95,-s*.35);c.lineTo(s*1.05,-s*.05);c.bezierCurveTo(s*.85,s*.7,-s*.4,s*.9,-s*.9,0);}
+    else if(k==='matar'){c.arc(0,0,s*.85,0,6.2832);}
+    else if(k==='mogar'){c.ellipse(0,0,s*1.0,s*.68,0,0,6.2832);}
+    else {c.ellipse(0,0,s*1.05,s*.7,0,0,6.2832);}
+    c.fill();c.shadowColor='transparent';
+    if(k==='moong'){c.strokeStyle='rgba(255,255,255,.45)';c.lineWidth=Math.max(1,s*.09);c.beginPath();c.moveTo(-s*.45,s*.05);c.lineTo(s*.45,s*.05);c.stroke();}
+    if(k==='mogar'){c.strokeStyle='rgba(90,60,0,.35)';c.lineWidth=Math.max(1,s*.08);c.beginPath();c.moveTo(-s*.8,0);c.lineTo(s*.8,0);c.stroke();}
+    if(k==='peanut'){c.strokeStyle='rgba(90,40,10,.4)';c.lineWidth=Math.max(1,s*.07);c.beginPath();c.moveTo(0,-s*.68);c.quadraticCurveTo(-s*.12,0,0,s*.68);c.stroke();}
+    c.fillStyle='rgba(255,255,255,.35)';c.beginPath();c.ellipse(-s*.3,-s*.25,s*.28,s*.12,-.5,0,6.2832);c.fill();
+    c.restore();
+  }
+  function seeds(cv,kinds,seed,size,gap){
+    var dpr=Math.min(window.devicePixelRatio||1,2),w=cv.clientWidth||600,h=cv.clientHeight||300;
+    cv.width=w*dpr;cv.height=h*dpr;var c=cv.getContext('2d');c.scale(dpr,dpr);
+    var r=rng(seed);var bg=c.createLinearGradient(0,0,0,h);bg.addColorStop(0,'#17503B');bg.addColorStop(1,'#0B2A1F');c.fillStyle=bg;c.fillRect(0,0,w,h);
+    for(var y=-size;y<h+size;y+=gap){for(var x=-size;x<w+size;x+=gap){
+      var kd=kinds[Math.floor(r()*kinds.length)];
+      c.save();c.translate(x+(r()-.5)*gap,y+(r()-.5)*gap);c.rotate(r()*Math.PI*2);
+      one(c,kd.k,kd.pal,size*(.85+r()*.3),r);c.restore();}}
+  }
+  var P=[
+    {n:'Sesame seeds',k:'sesame',pill:'Seed',pal:['#EFE4C8','#F6EDD8','#E3D5B2'],d:'Natural sesame seeds for food processors, bakeries and oil crushers.',t:['Purity level agreed per order','Cleaned and machine-sorted','Lab report on request']},
+    {n:'Moong',k:'moong',pill:'Pulse',pal:['#6E8F3A','#7FA044','#5E7D31'],d:'Whole green gram, cleaned and graded for wholesalers and food packers.',t:['Whole green moong','Sorted and cleaned','Grade agreed per order']},
+    {n:'Peanuts',k:'peanut',pill:'Nut',pal:['#C98E5A','#D69D68','#B97F4C'],d:'Groundnut kernels for snack makers, oil millers and wholesalers.',t:['Count per ounce agreed per order','Moisture checked before loading','Inspection on request']},
+    {n:'Chana',k:'chana',pill:'Pulse',pal:['#C28A4B','#CF9A58','#B07A3E'],d:'Chickpeas for wholesalers, millers and packers, by truck or container.',t:['Size grade agreed per order','Cleaned and sorted','Bagged for transport']},
+    {n:'Matar',k:'matar',pill:'Pulse',pal:['#B8AC7C','#C8BC8C','#A89C6C'],d:'Dried peas supplied in bulk loads with documents.',t:['Colour and size per spec','Cleaned and sorted','Sample on request']},
+    {n:'Mogar',k:'mogar',pill:'Pulse',pal:['#D2B03E','#E0C050','#BE9C30'],d:'Mogar supplied in bagged loads with a written specification.',t:['Cleaned and graded','Bagged for transport','Sample on request']}
+  ];
+  var grid=document.getElementById('pgrid'),sel=document.getElementById('prod');
+  P.forEach(function(p,i){
+    var d=document.createElement('div');d.className='card';
+    d.innerHTML='<div class="img"><canvas aria-hidden="true"></canvas><span class="pill">'+p.pill.toUpperCase()+'</span></div>'+
+      '<div class="body"><h3>'+p.n+'</h3><p>'+p.d+'</p><ul class="ticks">'+p.t.map(function(x){return'<li>'+x+'</li>'}).join('')+'</ul>'+
+      '<a class="btn sm" href="#contact" data-p="'+p.n+'">Request sample &rarr;</a></div>';
+    grid.appendChild(d);
+    var o=document.createElement('option');o.textContent=p.n;sel.appendChild(o);
+  });
+  var oo=document.createElement('option');oo.textContent='Other, described in message';sel.appendChild(oo);
+  grid.addEventListener('click',function(e){var a=e.target.closest('a[data-p]');if(a){sel.value=a.getAttribute('data-p')}});
+  function paint(){
+    P.forEach(function(p,i){seeds(grid.children[i].querySelector('canvas'),[p],11+i,p.k==='sesame'?6:10,p.k==='sesame'?9:14)});
+    var all=P;
+    seeds(document.getElementById('heroSeeds'),all,5,11,16);
+    seeds(document.getElementById('aboutSeeds'),all,21,12,17);
+    seeds(document.getElementById('packSeeds'),all,33,12,17);
+  }
+  paint();var t;window.addEventListener('resize',function(){clearTimeout(t);t=setTimeout(paint,200)});
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(paint);
+
+  var f=document.getElementById('f'),out=document.getElementById('out'),txt=document.getElementById('txt'),copy=document.getElementById('copy'),wa=document.getElementById('wa');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var v=function(id){return(document.getElementById(id).value||'').trim()};
+    var m='Hello Digital Ashwin Exports,\n\nCompany: '+(v('company')||'-')+'\nContact: '+(v('person')||'-')+'\nProduct: '+v('prod')+
+      '\nDestination: '+(v('dest')||'-')+'\nQuantity: '+v('qty')+'\nPrice terms: '+v('terms')+'\nMessage: '+(v('msg')||'-')+
+      '\n\nPlease send a sample, the current spec sheet and your price per tonne.';
+    txt.textContent=m;wa.href='https://wa.me/917057865491?text='+encodeURIComponent(m);
+    out.style.display='block';out.scrollIntoView({behavior:'smooth',block:'nearest'});
+  });
+  copy.addEventListener('click',function(){
+    var done=function(){copy.textContent='Copied';setTimeout(function(){copy.textContent='Copy message'},1800)};
+    var fb=function(){var r=document.createRange();r.selectNodeContents(txt);var s=getSelection();s.removeAllRanges();s.addRange(r);copy.textContent='Selected, now copy'};
+    try{navigator.clipboard.writeText(txt.textContent).then(done,fb)}catch(x){fb()}
+  });
+})();
+</script>
+
+</body>
+</html>
